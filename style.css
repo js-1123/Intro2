@@ -1,0 +1,442 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kreon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@1&family=Kreon&family=Lilita+One&family=Modak&display=swap');
+/* Reset CSS */
+body {
+  margin: 0;
+  height: 100vh;
+}
+ul {padding: 0; margin: 0; list-style: none;}
+* {box-sizing: border-box;}
+a {text-decoration: none; color: #fff;}
+
+html {
+  scroll-behavior:smooth;
+}
+
+/* Header */
+.goto-top {
+  position: fixed;
+  top: 92%;
+  right: 80px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.goto-top.active {
+  top: 90%;
+  opacity: 1;
+  visibility: visible;
+}
+.goto-top a span {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.goto-top a span:before {
+  content:"\f106";
+  font-family: fontawesome;
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  left: 9px;
+  top: -1px;
+  color: #000;
+}
+
+/* inner 1 */
+
+.container {
+  height: 100%;
+  position: relative;
+}
+.inner1 {
+  background: url(img/milky-way-1023340_1920.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+.content {
+  position: absolute;
+  width: 1000px;
+  background-color: rgba(0, 0, 0, 0.22);
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: slidedown 1s linear;
+}
+.content h1{
+  color: #fff;
+  font-size: 100px;
+  font-family: 'Gamja Flower', cursive;
+  font-weight: normal;
+  animation: textani 2s linear infinite;
+  animation-fill-mode: both;
+  font-family: 'Cormorant Infant', serif;
+}
+.content h1 span {
+  font-size: 30px;
+}
+.content p {
+  color: #fff;
+  font-family: 'Gamja Flower', cursive;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 16px;
+}
+
+.gnb-inner {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: 0.5s;
+}
+.gnb-inner.active {
+  background-color: #fff;
+}
+.gnb-inner.active span {
+  color: #000;
+}
+.gnb {
+  margin: auto;
+  width: 1200px;
+  color: #fff;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+.gnb span {
+  margin: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.gnb span:last-child {
+}
+/* inner 2 */
+
+.inner2 {
+  height: 550px;
+  background-color: #182524;
+}
+.heading-width {
+  width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+.inner2-content {
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.inner2-content > div {
+}
+
+.inner2-content > .inner2-info {
+  width: 20%;
+  float: left;
+  height: 100%;
+}
+.inner2-content > .inner2-text {
+  float: right;
+  width: 80%;
+  height: 100%;
+}
+.inner2-info img {
+  width: 150px;
+  height: 180px;
+}
+.inner2-info h1 {
+  margin: 50px;
+  color: #FBE9C9;
+  font-size: 40px;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.inner2-text {
+  color: #FBE9C9;
+  text-align: left;
+  padding-left: 120px;
+  padding-top: 70px;
+  
+}
+.inner2-hr {
+  border: none;
+  height: 5px;
+  width: 100px;
+  background-color: #fff;
+  margin: 0;
+  
+}
+.inner2-text h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.inner2-text p {
+  font-size: 15px;
+  line-height: 1.6em;
+}
+.inner2 .p2 span{
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+}
+
+/* inner 3 */
+
+.inner3 {
+  height: 100%;
+  background-color: #182524;
+  color: #FBE9C9;
+  padding-top: 80px;
+}
+.inner3 .heading-width {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.inner3 .heading-width h1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  font-family: 'Sansita Swashed', cursive;
+}
+.inner3-content {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  text-align: left;
+}
+
+.inner3-item {
+  text-align: center;
+  height: 220px;
+}
+.inner3-item span {
+  margin: 25px;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 30px;
+  border: 7px solid #FBE9C9;
+  width: 160px;
+  height: 160px;
+  line-height: 140px;
+  border-radius: 50%;
+}
+
+.inner3-intro {
+  text-align: center;
+}
+.inner3-intro p {
+  line-height: 2em;
+}
+.inner3-intro span {
+  display: block;
+  margin: 20px;
+}
+
+.inner3-intro span:before {
+  content:"\f00c";
+  font-family: fontawesome;
+  margin-right: 7px;
+}
+
+.inner3-intro span:nth-child(1):before {
+  color: crimson;
+}
+.inner3-intro span:nth-child(2):before {
+  color: dodgerblue;
+}
+.inner3-intro span:nth-child(3):before {
+  color: yellow;
+}
+.inner3-intro span:nth-child(4):before {
+  color: green;
+}
+
+/* inner 4 */
+
+.inner4 {
+  height: 800px;
+  background-color: #182524;
+  color: #FBE9C9;
+  overflow: hidden;
+}
+
+.inner4-content {
+  height: 100%;
+}
+
+.inner4-info h1 {
+  font-size: 50px;
+  margin: 50px;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.inner4-info p {
+  font-size: 18px;
+  padding-left: 60px;
+  margin-bottom: 100px;
+}
+.inner4-intro {
+  
+}
+.inner4-intro > div {
+  text-align: center;
+}
+.inner4-intro > div p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 2em;
+}
+.inner4-intro > div img {
+  width: 500px;
+  display: inline-block;
+}
+
+.inner4-intro > div a {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  background-color: teal;
+  line-height: 30px;
+  border-radius: 10px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.inner4-intro > div {
+  
+}
+
+/* inner 5 */
+
+.inner5 {
+  background-color: #182524;
+  color: #FBE9C9;
+  height: 600px;
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.inner5-content {}
+.inner5-content p {
+  position: relative;
+  padding-left: 30px;
+}
+.inner5-content p:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: #FBE9C9;
+  bottom: -20px;
+  width: 30px;
+  animation: lineani 4s linear infinite;
+}
+.contac-content {
+  text-align: center;
+}
+.contac-content .item {
+  display: inline-block;
+  margin: 100px;
+}
+.contac-content .item span {
+  font-size: 25px;
+  position: relative;
+}
+.contac-content .item:nth-child(1) span:after,
+.contac-content .item:nth-child(2) span:after,
+.contac-content .item:nth-child(3) span:after {
+  font-family: fontawesome;
+  font-size: 30px;
+  position: absolute;
+  top: 240%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+.contac-content .item:nth-child(1) span:after {
+  content:"\f003";
+  
+}
+.contac-content .item:nth-child(2) span:after {
+  content:"\f098";
+  
+}
+.contac-content .item:nth-child(3) span:after {
+  content:"\f113";
+}
+.item h4 {
+  padding-top: 80px;
+}
+
+/* Custom Slick.js */
+
+.slick-dots li button:before {
+  font-size: 30px;
+  color: #fff;
+}
+.slick-dots li button:after {
+  font-size: 30px;
+  color: #fff;
+}
+
+.slick-next:before {
+  
+}
+.slick-next {
+}
+.slick-slide {
+  outline: none;
+}
+.slick-current.slick-active {
+  outline: none;
+}
+@keyframes textani {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  }
+  
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    top: 40%;
+  }
+  
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+@keyframes lineani {
+  0% {
+    width: 400px;
+  }
+  
+  50% {
+    width: 0;
+  }
+  
+  100% {
+    width: 400px;
+  }
+}
